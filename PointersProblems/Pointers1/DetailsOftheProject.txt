@@ -1,0 +1,31 @@
+Pointer Arthmetic
+Note : We can use Pointer Arthmetic 
+	if we known
+	a) The address of very first element of the array. 
+	b) How much space each element occupies.
+1) Ablity of pointer to work with increment & decrement operator is POINTER ARTHMETIC
+	int arr[4] = {10,50,40,50,1};
+	int* intPtr = arr;
+	Now if i say 
+	intPtr will have address of arr[1] & *intPtr will show 10
+	(intPrt++) or (arr++) will have address of arr[2] & *(intPtr++) or *(arr++) will show 20
+2) Since we have pointer type, Pointer knows how many bytes to move in memory.
+	So as shown below 
+	int arr[3] = {10,20,30};
+	int* intPtr = arr;
+	intPtr++ will move 4 Bytes
+
+	char charArry = {'a','b','c','d'};
+	charArry++ will move 1 Byte
+3) We can use Pointer Arthmetic as shown below as well
+	int arr[3] = {10,20,30};
+	(arr + 1) will show address of element "20". *(arr+1) will point to 20.
+	char charArray[3] = {'a','n','s'};
+	(charArray + 1) will show address of element "n". *(charArray + 1) will point to 'n'.
+4) Strings are char* (character pointers) - An array of characters
+	1) In memory, a string looks similar to char array terminated by '\0'.
+	2) char* str = "Hello World"
+		printf("%s",str); // Prints Hello Worlds 
+	3) *str will access the first element of the string i.e. 'H '
+	4) *(str + 1),*(str + 2) will access  e & l
+	5) str[0] , str[1] will access h & e 
