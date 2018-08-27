@@ -1,8 +1,10 @@
 Pointer Arthmetic
 Note : We can use Pointer Arthmetic 
 	if we known
-	a) The address of very first element of the array. 
+	a) The address of very first element of the array. 		
 	b) How much space each element occupies.
+		int take 4 bytes
+		char takes 1 bytes etc.
 1) Ablity of pointer to work with increment & decrement operator is POINTER ARTHMETIC
 	int arr[4] = {10,50,40,50,1};
 	int* intPtr = arr;
