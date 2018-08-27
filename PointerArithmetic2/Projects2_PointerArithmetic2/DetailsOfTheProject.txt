@@ -1,0 +1,84 @@
+1) Question 1
+	void Question1()
+	{
+		int length = 10;
+		int breadth = 12;
+
+		int *length_ptr = &length;
+		int *breadth_ptr = &breadth;
+
+		//What will be displayed in the screen?
+		printf("Printing derefrenced data");
+		printf("%d\n", *length_ptr); //10
+		printf("%d\n", *breadth_ptr); //12
+	}
+
+	it will display 10 & 12 as * is value of/derefrencing the pointer
+2) Question 2
+	void Question2()
+	{
+		int length = 10;
+		int breadth = 20;
+
+		int* length_ptr = &length; //Line 1
+		int* breadth_ptr = &breadth; //Line 2
+
+		printf("Printing pointer\n");
+		printf("%p\n", length_ptr); //value of length_ptr i.e. address of length
+		printf("%p\n", breadth_ptr); //value of breadth_ptr i.e. address of breadth
+	}
+
+	it will print address of length and breadth as it will prints length_ptr and breadth_ptr's value
+	which was assigned to them in line 1 & line 2
+3) Question 3
+	void Question3()
+	{
+		int length = 10;
+		int breadth = 20;
+
+		int* length_ptr = &length; //Line 1
+		int* breadth_ptr = &breadth;
+
+		int *test = length_ptr; //Line 2
+		*test = 25; //Line 3
+
+		printf("\n");
+		printf("Length : %d\n",length); //25
+		printf("Breadth : %d\n", breadth); //20
+		printf("\n");
+	}
+
+	Length will 25 & Breadth will be 10 as 
+	In Line 1, we have created a pointer for length 
+	In Line 2, we created another pointer which is pointing to length_ptr
+	In Line 3, we are using derefrencing on test pointer and access the value of the pointer(length) and assign's value 25 
+	test pointer indirectly holds address of length 
+4) Question 4
+	void Question4()
+	{
+		int length = 10;
+		int breadth = 20;
+
+		int* length_ptr = &length; //Line 1
+		int* breadth_ptr = &breadth;
+
+		int *test = length_ptr; //Line 2
+		*test = 25; //Line 3
+
+		printf("\n");
+		printf("Length : %d\n", length); //25
+		printf("Breadth : %d\n", breadth); //20
+		printf("\n");
+
+		test = breadth_ptr; //Line 4
+		*test = 40; //Line 5
+
+		printf("\n");
+		printf("Length : %d\n", length); //25
+		printf("Breadth : %d\n", breadth); //40
+		printf("\n");
+	}
+	For Line number 1, 2 & 3 refer Question 3
+	In Line 4, breadth_ptr is assinged to test pointer
+	In Line 5, As test is now pointing to address of breadth_ptr & breadth_ptr is pointing to breadth
+			   using derefrencing we have assinged value of breadth to 40.
