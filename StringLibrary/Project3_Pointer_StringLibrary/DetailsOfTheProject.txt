@@ -1,0 +1,7 @@
+1) string.h is a library which contains many operation/function will be come handy 
+	while manipulating strings.
+	For Examples 
+	1) Copy String
+	2) Get Length of the string
+	3) Compare Strings
+2) 
