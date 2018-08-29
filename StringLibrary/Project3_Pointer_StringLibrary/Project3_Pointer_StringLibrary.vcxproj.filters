@@ -15,6 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="DetailsOfTheProject.txt" />
+    <ClCompile Include="myStringImplementation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="DetailsOfTheProject_StringLength.txt" />
+    <Text Include="DetailsOfTheProject_CharCheck.txt" />
   </ItemGroup>
 </Project>

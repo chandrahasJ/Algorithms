@@ -1,0 +1,42 @@
+1) string.h is a library which contains many operation/function will be come handy 
+	while manipulating strings.
+	For Examples 
+	1) Copy String
+	2) Get Length of the string
+	3) Compare Strings
+2) Get Length of the String 
+	Return Type = size_t => is an unassigned intergal type. (%lu) 0...N+  
+	As string length cannot be negative
+
+	Parameter = const char* stringValue
+	We have added const keyword as inside GetStringLength function 
+	We must not allow string assignment.
+	i.e. stringValue[5] = "C" is not allowed in the function
+
+3) Code
+	size_t GetStringLength(const char* stringValue ) {
+		//Add the Null Check
+		if (stringValue == NULL)
+		{
+			return 0; 
+		}
+
+		int length = 0;
+		const char *ch = stringValue; //Line 1 - Assign stringValue with new Char Pointer *ch
+		while (*ch != '\0') //Line 2 - String Ends with "\0" i.e. Terminating Condition
+		{		
+			length++; // Line 3 - Calculate actual length of the StringValue
+			ch++; //Line 4 - Pointer Arthimetic incrementation
+		}
+		return length; 
+	}
+
+	a) We must always take care of edge cases i.e. NULL Checks
+	b) In the Code, Line 1 we have assigned stringValue with new Char Pointer *ch
+	c) Line 2 - While Loop Terminating Condition for string is "\0"
+	d) Line 4 - We are using pointer Arthimetic for incrementing the pointer
+	e) Line 3 - We will get Actual Length of stringValue inside length
+
+4) Use 
+	size_t length = GetStringLength("What is my Length");	
+	printf("Length is  %lu", length);	

@@ -139,7 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="DetailsOfTheProject.txt" />
+    <Text Include="DetailsOfTheProject_CharCheck.txt" />
+    <Text Include="DetailsOfTheProject_StringLength.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="myStringImplementation.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
