@@ -1,2 +1,4 @@
 ﻿  myStringImplementation.c
+m:\vs2017 projects\algorithms\stringlibrary\project3_pointer_stringlibrary\mystringimplementation.c(43): warning C4047: 'initializing': 'char' differs in levels of indirection from 'char *'
+m:\vs2017 projects\algorithms\stringlibrary\project3_pointer_stringlibrary\mystringimplementation.c(46): warning C4047: 'initializing': 'char' differs in levels of indirection from 'char *'
   Project3_Pointer_StringLibrary.vcxproj -> M:\VS2017 Projects\Algorithms\StringLibrary\Debug\Project3_Pointer_StringLibrary.exe

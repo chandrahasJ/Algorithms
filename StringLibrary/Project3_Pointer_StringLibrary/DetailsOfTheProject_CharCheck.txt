@@ -3,10 +3,10 @@ Checking character is present in the given string
 	a) Function will return where character "<a>" is present in the stringValue
 		Address will be returned.
 	b) Characters are integers at heart.
-	   int value will be the ASCI Code for the character 
+	   Interger are just the ASCII Code for the character.
 	   ASCII Character are integers i.e. A = 65, a = 97 etc.
 	   So we can use them for comparing the characters
-	c) 
+3) Below is the Code	
 	
 	
 	
