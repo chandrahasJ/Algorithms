@@ -20,16 +20,17 @@ size_t GetStringLength(const char* stringValue ) {
 }
 
 char* stringCheck(const char* stringValue, int c) {
+	//Add the Null Check
 	if (stringValue == NULL) {
 		return NULL;
 	}
-
-	while (*stringValue != '\0') 
+	const char *dummyString = stringValue;
+	while (*dummyString != '\0') 
 	{		
-		if (*stringValue == c) {
-			return (char*)stringValue;
+		if (*dummyString == c) {
+			return (char*)dummyString;
 		}
-		stringValue++;
+		dummyString++;
 	}
 
 	return NULL;
@@ -40,9 +41,13 @@ void main()
 	size_t length = GetStringLength("What is my Length");	
 	printf("Length is  %lu \n", length);
 
-	char getValue = stringCheck("ABCD", 65); 
-	printf("%d", getValue);
+	printf("Check ABCD for 65\n");
+	char getValue = stringCheck("ABCD", 'A');
+	printf("%s\n", getValue);
 
-	char getValue2 = strchr("ABCD", 65);
-	printf("%c", getValue2);
+	getValue = NULL;
+
+	printf("Check ABCD for 66\n");
+	char getValue2 = strrchr("ABCD", 'A');
+	printf("%s", getValue2);
 }

@@ -1,4 +1,7 @@
 ﻿  myStringImplementation.c
-m:\vs2017 projects\algorithms\stringlibrary\project3_pointer_stringlibrary\mystringimplementation.c(43): warning C4047: 'initializing': 'char' differs in levels of indirection from 'char *'
-m:\vs2017 projects\algorithms\stringlibrary\project3_pointer_stringlibrary\mystringimplementation.c(46): warning C4047: 'initializing': 'char' differs in levels of indirection from 'char *'
+m:\vs2017 projects\algorithms\stringlibrary\project3_pointer_stringlibrary\mystringimplementation.c(46): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
+m:\vs2017 projects\algorithms\stringlibrary\project3_pointer_stringlibrary\mystringimplementation.c(48): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
+m:\vs2017 projects\algorithms\stringlibrary\project3_pointer_stringlibrary\mystringimplementation.c(52): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
+m:\vs2017 projects\algorithms\stringlibrary\project3_pointer_stringlibrary\mystringimplementation.c(45): warning C4047: 'initializing': 'char' differs in levels of indirection from 'char *'
+m:\vs2017 projects\algorithms\stringlibrary\project3_pointer_stringlibrary\mystringimplementation.c(51): warning C4047: 'initializing': 'char' differs in levels of indirection from 'char *'
   Project3_Pointer_StringLibrary.vcxproj -> M:\VS2017 Projects\Algorithms\StringLibrary\Debug\Project3_Pointer_StringLibrary.exe

@@ -1,3 +1,4 @@
+						ALWAYS CODE DEFENSIVELY.........................
 1) string.h is a library which contains many operation/function will be come handy 
 	while manipulating strings.
 	For Examples 
@@ -11,7 +12,8 @@
 	Parameter = const char* stringValue
 	We have added const keyword as inside GetStringLength function 
 	We must not allow string assignment.
-	i.e. stringValue[5] = "C" is not allowed in the function
+	i.e. stringValue[5] = "C" is not allowed inside the function
+	//Modification is not allowed inside the Function...
 
 3) Code
 	size_t GetStringLength(const char* stringValue ) {

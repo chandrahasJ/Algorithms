@@ -1,3 +1,4 @@
+							ALWAYS CODE DEFENSIVELY.............................
 Checking character is present in the given string
 2) char* stringCheck(const char* stringValue,int value);
 	a) Function will return where character "<a>" is present in the stringValue
