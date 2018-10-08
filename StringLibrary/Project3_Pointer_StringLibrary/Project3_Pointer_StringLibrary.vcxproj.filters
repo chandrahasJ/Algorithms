@@ -22,5 +22,6 @@
   <ItemGroup>
     <Text Include="DetailsOfTheProject_StringLength.txt" />
     <Text Include="DetailsOfTheProject_CharCheck.txt" />
+    <Text Include="DetailsOfTheProject_PointerAsArguments.txt" />
   </ItemGroup>
 </Project>

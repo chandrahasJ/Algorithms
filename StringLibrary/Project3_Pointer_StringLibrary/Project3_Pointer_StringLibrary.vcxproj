@@ -141,6 +141,7 @@
   <ItemGroup>
     <Text Include="DetailsOfTheProject_CharCheck.txt" />
     <Text Include="DetailsOfTheProject_StringLength.txt" />
+    <Text Include="DetailsOfTheProject_PointerAsArguments.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="myStringImplementation.c" />

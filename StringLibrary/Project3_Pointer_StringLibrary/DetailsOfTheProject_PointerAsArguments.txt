@@ -1,0 +1,54 @@
+.............................................Always code defensively......................................................
+											Pointer Agruments Passing
+1) Pointer Argument can be modified by the function or Re-Assigned by the function.
+2) Modification of pointer value
+	a) Below Code is the example of Modification of Pointer Arguments
+		public static void main() //Calling Code
+		{
+			char cj = 'C';
+			char* chandrahas = &cj;
+			MyCharacter_Modification(chandrahas);
+			printf("%c",cj);
+		}
+
+		public void MyCharacter_Modification(char* chandrika) //Called Code
+		{
+			*chandrika = 'J';
+		}
+
+	b) Modification of the pointer reflects in the calling code.
+	c) The character pointer chandrahas and character pointer chandrika points to same address/location.
+	d) if you dereference the character pointer chandrika and modifiy the value then value inside the character 
+		pointer chandrahas will also get changed.
+	e) if you want to stop this behaviour then you can pass it as const
+		As shown in the below code
+		public void MyCharacter_Error(const char* chandrika)
+		{
+			*chandrika = 'J'; //Line A
+		}
+
+		Line A - will gave you compile time error stating const cannot be changed.
+3) Re-Assign of pointer value
+	a) Below Code is the example of Re-Assignment of pointer Arguments
+		public static void main() //Calling Code
+		{
+			char cj = 'C';
+			char* goku = &cj;
+			MyCharacter_ReAssignment(goku);
+			printf("%c",cj);
+		}
+
+		public void MyCharacter_ReAssignment(char* chichi) //Called Code
+		{
+			chichi = (char*) malloc(sizeof(char)); //Line A
+			*chichi = 'G';
+			printf("%s")
+		}
+	b) Re-Assignment does not reflects in the calling code.	
+	c) When MyCharacter_ReAssigment(goku) was called inside the Main Function
+		At that point the character pointer chichi and goku were pointing to same address 
+		but when we added Line A character pointer got new address allocated.
+		Hence when we used derefernce on character pointer chichi 
+		it didn't had any effect on goku as addresses were different.
+	 
+	

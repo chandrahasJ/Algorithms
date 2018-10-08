@@ -7,7 +7,14 @@ Checking character is present in the given string
 	   Interger are just the ASCII Code for the character.
 	   ASCII Character are integers i.e. A = 65, a = 97 etc.
 	   So we can use them for comparing the characters
-3) Below is the Code	
-	
+3) Below is the PSEUDOCODE for if string is present inside the given string
+	1) Add NULL check on const character pointer inside the function.
+	2) Assign the const character pointer to another character pointer.
+	3) Add a loop to go through all the characters within this character pointer.
+	4) Add if clause inside the loop to compare it character by character
+	   with character pointer and value to be checked.
+	5) Return a casted character pointer. 
+	6) Use post-Increment on character pointer - (Arithematic pointer will do its job)
+	7) Outside loop if comparision fails then return NULL value.
 	
 	

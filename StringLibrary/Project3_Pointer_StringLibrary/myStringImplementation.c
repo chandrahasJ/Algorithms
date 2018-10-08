@@ -42,12 +42,12 @@ void main()
 	printf("Length is  %lu \n", length);
 
 	printf("Check ABCD for 65\n");
-	char getValue = stringCheck("ABCD", 'A');
+	char* getValue = stringCheck("ABCD", 'A');
 	printf("%s\n", getValue);
 
 	getValue = NULL;
 
 	printf("Check ABCD for 66\n");
-	char getValue2 = strrchr("ABCD", 'A');
+	char* getValue2 = strrchr("ABCD", 'A');
 	printf("%s", getValue2);
 }
