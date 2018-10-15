@@ -23,5 +23,11 @@
     <Text Include="DetailsOfTheProject_StringLength.txt" />
     <Text Include="DetailsOfTheProject_CharCheck.txt" />
     <Text Include="DetailsOfTheProject_PointerAsArguments.txt" />
+    <Text Include="DetailsOfTheProject_HayStackNeedle.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="myString.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

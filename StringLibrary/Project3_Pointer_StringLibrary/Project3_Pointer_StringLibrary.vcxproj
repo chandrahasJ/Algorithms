@@ -142,9 +142,13 @@
     <Text Include="DetailsOfTheProject_CharCheck.txt" />
     <Text Include="DetailsOfTheProject_StringLength.txt" />
     <Text Include="DetailsOfTheProject_PointerAsArguments.txt" />
+    <Text Include="DetailsOfTheProject_HayStackNeedle.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="myStringImplementation.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="myString.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

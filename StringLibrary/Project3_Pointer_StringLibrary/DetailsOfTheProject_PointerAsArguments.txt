@@ -47,7 +47,7 @@
 	b) Re-Assignment does not reflects in the calling code.	
 	c) When MyCharacter_ReAssigment(goku) was called inside the Main Function
 		At that point the character pointer chichi and goku were pointing to same address 
-		but when we added Line A character pointer got new address allocated.
+		but when we added Line A i.e. ReAssigning Memory character pointer got new address allocated.
 		Hence when we used derefernce on character pointer chichi 
 		it didn't had any effect on goku as addresses were different.
 	 

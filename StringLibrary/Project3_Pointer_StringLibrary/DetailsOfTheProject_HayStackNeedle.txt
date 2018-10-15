@@ -1,0 +1,43 @@
+......................................ALWAYS CODE DEFENSIVELY................................................................
+										Haystack & Needle - To Check for String in String.
+1) strstr function in string.h
+	lets assume you have haystack as "Chandrahas Poojari" & needle as "Poo"
+	then strstr will return you "Poojari".
+	
+		printf("Use strstr function from String.h\n");
+		printf("haystack : %s\n", haystack);
+		printf("needle : %s\n", needle);
+		char* getNeedle = strstr(haystack, needle);
+		printf("getNeedle value :> %s", getNeedle);
+	When we execute above code the getNeedl's value is "Poojari"
+2) char* strstr(const char* haystack,const char* needle)
+	a) The two arguments passed inside the function are const hence we will not be able modify them.
+	b) This function checks needle is present inside the haystack if yes then return the substring from the position of the needle
+		i.e. haystack is "Chandrahas" and Needle is "Chandrika" then return value will be "(null)"	
+			 haystack is "Chandrahas" and Needle is "Chand" then return value will be "Chandrahas"	
+			 haystack is "Chandrahas" and Needle is "rahas" then return value will be "rahas"	
+			 haystack is "Chandrahas" and Needle is "r" then return value will be "rahas"	
+			 haystack is "Chandrahas" and Needle is "A" then return value will be "(null)"	
+	c) This function returns  character pointer to where the string needle is present in the string haystack.
+	d) Characters are integer they are represented as ascii code & we can compare them.
+3) PESUDO CODE for implementing Haystack & Needle
+	a) Check whether Haystack & Needle are NULL or not 
+		1) if any one of them are NULL then return NULL
+	b) Loop through Haystack till String Terimination '\0'
+	c) Inside the above Loop 
+		Compare Haystack & Needle 
+		if yes then
+			1) create new HayStack & Needle variable 
+			2) assign orginal Haystack & Needle to this newly create dummy variable
+			3) Loop through Needle till string Termination '\0' and also compare dummy haystack & needle 
+			4) Inside the above loop mentioned in point 3 
+				Increment both dummy Haystack & Needle variable till it satisfies the loop
+			5) outside loop in point 3 and inside Haystack & Needle comparsion scope
+				check if dummy needle variable is equal to string termination '\0'.
+				if yes  then
+					Return casted character pointer haystack					
+		if no then
+			increment haystack till it satisfies the loop
+	d)  if all the above check fails it means that haystack does not have the needle 
+		Return NULL..
+	

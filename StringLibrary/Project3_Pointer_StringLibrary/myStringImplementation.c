@@ -1,53 +1,31 @@
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
+#include "myString.h"
 
-size_t GetStringLength(const char* stringValue ) {
-	//Add the Null Check
-	if (stringValue == NULL)
-	{
-		return 0; 
-	}
-
-	int length = 0;
-	const char *ch = stringValue; // Assign String Value with Char Pointer ch
-	while (*ch != '\0')
-	{		
-		length++; //Calculate actual length of the StringValue
-		ch++; //Pointer Arthimetic incrementation
-	}
-	return length;
-}
-
-char* stringCheck(const char* stringValue, int c) {
-	//Add the Null Check
-	if (stringValue == NULL) {
-		return NULL;
-	}
-	const char *dummyString = stringValue;
-	while (*dummyString != '\0') 
-	{		
-		if (*dummyString == c) {
-			return (char*)dummyString;
-		}
-		dummyString++;
-	}
-
-	return NULL;
-}
 
 void main()
 {
 	size_t length = GetStringLength("What is my Length");	
 	printf("Length is  %lu \n", length);
 
-	printf("Check ABCD for 65\n");
-	char* getValue = stringCheck("ABCD", 'A');
+	char checkValue = 'F';
+	char* getValue = stringCheck("ABCDEFGHIJKLMNOPQRSTUVWXYZ", checkValue);
+	
+	printf("Check ABCD for %d\n", checkValue);
 	printf("%s\n", getValue);
-
 	getValue = NULL;
+	
+	char* getValue2 = strrchr("ABCDEFGHIJKLMNOPQRSTUVWXYZ", checkValue);
+	printf("Check ABCD for %d\n", checkValue);
+	printf("%s\n", getValue2);
 
-	printf("Check ABCD for 66\n");
-	char* getValue2 = strrchr("ABCD", 'A');
-	printf("%s", getValue2);
+	char* haystack = "Chandrahas";
+	char* needle = "r\0";
+
+	printf("Use strstr function from String.h\n");
+	printf("haystack : %s\n", haystack);
+	printf("needle : %s\n", needle);
+	char* getNeedle = strstr(haystack, needle);
+	printf("getNeedle value :> %s", getNeedle);
 }
